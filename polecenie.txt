@@ -1,0 +1,98 @@
+Kopiec ze z³¹czaniem
+Zaimplementuj (samodzielnie) kopiec maksymalizuj¹cy i nastêpuj¹ce operacje na nim:
++ nr v
+dodanie do kopca o numerze nr liczby v
+- nr
+usuniêcie z kopca o numerze nr maksimum i wypisanie go na ekran
+p nr
+wypisanie wszystkich elementów z kopca w kolejnoœci, w jakiej znajduj¹ siê w tablicy
+r nr n v1 ...vn
+usuniêcie z kopca o numerze nr wszystkich elementów i wpisanie do niego n nowych, o wartoœciach v1 ...vn
+j a b
+z³¹czenie kopców a i b; w wyniku kopiec a powinien zawieraæ wszystkie elementy z obu kopców, kopiec b powinien byæ pusty;
+po operacji j k k kopiec k powinien byæ pusty (najpierw ³¹czymy k z k, potem czyœcimy k)
+q
+zakoñczenie programu
+Numerami kopców bêd¹ liczby 0, 1, ..., 9. Rozmiar ¿adnego kopca nie przekroczy 8192 elementów.
+Wejœcie
+Na wejœciu pojawi siê ci¹g poleceñ w przedstawionym wy¿ej formacie. Ostatnim poleceniem bêdzie polecenie q.
+Wyjœcie
+Na wyjœciu nale¿y wypisaæ wynik poleceñ - i p.
+Przyk³ad
+Wejœcie
++ 0 1
++ 0 2
++ 0 3
++ 0 4
++ 0 5
++ 0 6
++ 0 7
++ 0 8
+p 0
+- 0
+- 0
+- 0
+- 0
+- 0
+- 0
+- 0
+- 0
+r 0 7 1 2 3 4 7 6 5
+p 0
+- 0
+- 0
+- 0
+- 0
+- 0
+- 0
+- 0
++ 0 1
++ 0 3
++ 0 5
++ 0 7
++ 1 2
++ 1 4
++ 1 6
++ 1 8
+j 0 1
+p 0
+p 1
+- 0
+- 0
+- 0
+- 0
+- 0
+- 0
+- 0
+- 0
+q
+
+
+Wyjœcie
+8 7 6 4 3 2 5 1 
+8
+7
+6
+5
+4
+3
+2
+1
+7 4 6 1 2 3 5 
+7
+6
+5
+4
+3
+2
+1
+8 7 6 2 5 3 4 1 
+
+8
+7
+6
+5
+4
+3
+2
+1
